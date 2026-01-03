@@ -1,37 +1,36 @@
-# Credit Risk Database Project
+Credit Risk Management Database Project
 
-This is a small SQL database I built to explore banking credit risk. It contains tables for customers, accounts, loans, payments, credit scores, and risk assessment.  
+Overview
+This project demonstrates how a relational SQL database can be designed and queried to analyze credit risk in a banking environment. The database models core banking entities such as customers, accounts, loans, payments, credit scores, and risk assessments, enabling analysis of delinquency, defaults, and customer risk profiles.
 
-I used sample data from Kaggle to test queries and practice SQL.
+The focus of the project is on answering real-world credit risk questions using SQL rather than simple data storage.
 
-## Tables in the database
+Dataset
+Sample banking-style data inspired by public Kaggle credit risk datasets was used to simulate realistic customer, loan, and payment behavior.
 
-- **Customers**: personal information (name, DOB, contact)  
-- **Accounts**: types of accounts and balances  
-- **Loans**: loan types, amounts, interest, and status  
-- **Payments**: payments made toward loans  
-- **Payment_Schedule**: detailed payment tracking  
-- **Loan_Applications**: records of loan requests and their outcomes  
-- **Credit_Scores**: credit scores by date  
-- **Risk_Assessment**: manual risk levels for each customer  
+Database Design
+The database is designed with normalized tables and clear relationships that reflect real banking systems:
+Customers and their accounts
+Loans linked to accounts
+Payment schedules and actual payments
+Credit scores tracked over time
+Manual risk assessments per customer
 
-## What you can do
+Business Questions Answered
+Identify customers with late or missed payments
+Analyze loan exposure by status such as active, late, paid, or defaulted
+Track changes in customer credit scores over time
+Identify high-risk customers with active loans
+Measure outstanding balances and payment performance
+Analyze loan distribution by type and risk level
 
-- Check customers with late payments  
-- Calculate total loan amount by status  
-- Track improving or declining credit scores  
-- Analyze interest earned by loan type  
-- Find high-risk customers with active loans  
-- Explore payment performance and outstanding balances  
+Skills Demonstrated
+SQL table design and normalization
+Primary and foreign key relationships
+Complex joins across multiple tables
+Aggregation and grouping for risk analysis
+Data quality checks and validation queries
+Business-oriented querying for credit risk use cases
 
-## How to use
-
-1. Load `database.sql` in MySQL, SQLite, or PostgreSQL.  
-2. All tables and sample data are included.  
-3. Run queries from `sample_queries.sql` to explore the data.  
-
-## Quick tips
-
-- Start with the **Data Cleaning & Exploring** section to make sure the data is consistent.  
-- Then move to **Quick Data Exploring** for overview stats.  
-- Finally, use **Useful Queries** to analyze credit risk trends.  
+Tools
+SQL (MySQL, PostgreSQL, or SQLite compatible)
