@@ -1,6 +1,6 @@
--- =============================================
--- Data Cleaning & Exploration
--- =============================================
+
+-- Data Cleaning And Exploration
+
 
 -- 1. Check for duplicate customers
 SELECT CustomerID, COUNT(*) AS Count
